@@ -1,16 +1,13 @@
-﻿```yaml
-name: Projeto Pagamentos CI - Ececução Arquivo Único
+﻿name: Projeto Pagamentos CI - Execução Arquivo Único
+
 on:
 
-  # Execução por Push
   push:
     branches:
-      - main
+      - master
 
-  # Execução Manual
   workflow_dispatch:
 
-  # Execução Agendada
   schedule:
     - cron: '*/5 * * * *'
 
@@ -28,7 +25,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24.x
 
       - name: Instalar Dependências
         run: npm install
@@ -41,4 +38,3 @@ jobs:
         with:
           name: relatorio-testes
           path: reports/
-```
