@@ -5,8 +5,8 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2026-06-21T22:27:53.278Z",
-    "end": "2026-06-21T22:27:53.282Z",
+    "start": "2026-06-21T23:13:57.998Z",
+    "end": "2026-06-21T23:13:58.002Z",
     "duration": 4,
     "testsRegistered": 3,
     "passPercent": 100,
@@ -18,19 +18,19 @@
   },
   "results": [
     {
-      "uuid": "151c8bb6-9519-45a7-b507-ee115b3aeb50",
+      "uuid": "09b110b5-bd74-48c5-b488-e46c8a75f384",
       "title": "",
-      "fullFile": "/workspaces/projeto-pagamentos-pipeline-unica/test/ServicoDePagamento.test.js",
-      "file": "/test/ServicoDePagamento.test.js",
+      "fullFile": "C:\\Workspace\\projeto-pagamentos-pipeline-unica\\test\\ServicoDePagamento.test.js",
+      "file": "\\test\\ServicoDePagamento.test.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "dba094eb-706e-4e0c-89a8-3bc22c5a8409",
+          "uuid": "5217c038-e875-4c0e-bd0d-f2ac45c63281",
           "title": "ServicoDePagamento",
-          "fullFile": "/workspaces/projeto-pagamentos-pipeline-unica/test/ServicoDePagamento.test.js",
-          "file": "/test/ServicoDePagamento.test.js",
+          "fullFile": "C:\\Workspace\\projeto-pagamentos-pipeline-unica\\test\\ServicoDePagamento.test.js",
+          "file": "\\test\\ServicoDePagamento.test.js",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const servicoDePagamento = new ServicoDePagamento();\n    servicoDePagamento.pagar(\n      '0987-7656-3475',\n      'Samar',\n      156.87\n    );\n    const ultimoPagamento =\n      servicoDePagamento.consultarUltimoPagamento();\n    assert.deepStrictEqual(ultimoPagamento, {\n      codigoBarras: '0987-7656-3475',\n      empresa: 'Samar',\n      valor: 156.87,\n      categoria: 'cara'\n    });",
               "err": {},
-              "uuid": "d4a8587d-371c-4ac9-ad11-8e99c8347276",
-              "parentUUID": "dba094eb-706e-4e0c-89a8-3bc22c5a8409",
+              "uuid": "f42b3706-d45f-409d-babf-091d62dfd6e2",
+              "parentUUID": "5217c038-e875-4c0e-bd0d-f2ac45c63281",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "const servicoDePagamento = new ServicoDePagamento();\n    servicoDePagamento.pagar(\n      '1111-2222-3333',\n      'Empresa X',\n      50\n    );\n    const ultimoPagamento =\n      servicoDePagamento.consultarUltimoPagamento();\n    assert.deepStrictEqual(ultimoPagamento, {\n      codigoBarras: '1111-2222-3333',\n      empresa: 'Empresa X',\n      valor: 50,\n      categoria: 'padrão'\n    });",
               "err": {},
-              "uuid": "eac23ec9-0760-4c83-baef-f215bccd68f6",
-              "parentUUID": "dba094eb-706e-4e0c-89a8-3bc22c5a8409",
+              "uuid": "17f9f971-ead6-435c-b4ec-df49f1d10333",
+              "parentUUID": "5217c038-e875-4c0e-bd0d-f2ac45c63281",
               "isHook": false,
               "skipped": false
             },
@@ -83,17 +83,17 @@
               "context": null,
               "code": "const servicoDePagamento = new ServicoDePagamento();\n    servicoDePagamento.pagar(\n      '1111',\n      'Empresa 1',\n      50\n    );\n    servicoDePagamento.pagar(\n      '2222',\n      'Empresa 2',\n      200\n    );\n    const ultimoPagamento =\n      servicoDePagamento.consultarUltimoPagamento();\n    assert.deepStrictEqual(ultimoPagamento, {\n      codigoBarras: '2222',\n      empresa: 'Empresa 2',\n      valor: 200,\n      categoria: 'cara'\n    });",
               "err": {},
-              "uuid": "86213869-fa7c-4887-9120-7c1768e2adce",
-              "parentUUID": "dba094eb-706e-4e0c-89a8-3bc22c5a8409",
+              "uuid": "16973be9-b073-44c3-b4bc-af104fcf449b",
+              "parentUUID": "5217c038-e875-4c0e-bd0d-f2ac45c63281",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d4a8587d-371c-4ac9-ad11-8e99c8347276",
-            "eac23ec9-0760-4c83-baef-f215bccd68f6",
-            "86213869-fa7c-4887-9120-7c1768e2adce"
+            "f42b3706-d45f-409d-babf-091d62dfd6e2",
+            "17f9f971-ead6-435c-b4ec-df49f1d10333",
+            "16973be9-b073-44c3-b4bc-af104fcf449b"
           ],
           "failures": [],
           "pending": [],
