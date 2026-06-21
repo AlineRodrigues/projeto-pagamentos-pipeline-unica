@@ -49,20 +49,28 @@ As pipelines foram implementadas através de arquivos YAML armazenados no própr
 # Estrutura do Projeto
 
 ```text
-projeto-pagamentos
+projeto-pagamentos-pipeline-unica
+│
+├── .github/
+│   └── workflows/
+│       └── ci-exec.yaml
+│
+├── evidencias/
+│
+├── reports/
+│   ├── resultado.html
+│   └── resultado.json
 │
 ├── src/
-├── test/
-├── reports/
+│   └── ServicoDePagamento.js
 │
+├── test/
+│   └── ServicoDePagamento.test.js
+│
+├── .gitignore
 ├── package.json
 ├── package-lock.json
-│
-└── .github/
-    └── workflows/
-        ├── 01-push-exec.yaml
-        ├── 02-manual-exec.yaml
-        └── 03-schedule-exec.yaml
+└── README.md
 ```
 
 ---
@@ -109,7 +117,7 @@ O arquivo HTML apresenta uma visualização amigável dos resultados dos testes 
 Arquivo:
 
 ```text
-.github/workflows/01-push-exec.yaml
+.github/workflows/ci-exec.yaml
 ```
 
 A pipeline é executada automaticamente sempre que alterações são enviadas para a branch principal do repositório.
@@ -127,7 +135,7 @@ Objetivo:
 Arquivo:
 
 ```text
-.github/workflows/02-manual-exec.yaml
+.github/workflows/ci-exec.yaml
 ```
 
 A execução ocorre manualmente através da interface do GitHub Actions utilizando o recurso Workflow Dispatch.
@@ -145,7 +153,7 @@ Objetivo:
 Arquivo:
 
 ```text
-.github/workflows/03-schedule-exec.yaml
+.github/workflows/ci-exec.yaml
 ```
 
 A pipeline é executada automaticamente através de agendamento utilizando expressões Cron.
@@ -196,23 +204,25 @@ As imagens apresentadas a seguir documentam cada etapa do processo e servem como
 ### 1. Execução por Push
 
 <p align="center">
-  <img src="./evidencias/push-sucesso-1.png" width="45%">
-  <img src="./evidencias/push-sucesso-2.png" width="45%">
+  <img src="./evidencias/execucao-push-1.png" width="45%">
+  <img src="./evidencias/execucao-push-2.png" width="45%">
 </p>
 
 ### 2. Execução Manual
 
 <p align="center">
-  <img src="./evidencias/manual-sucesso-1.png" width="45%">
-  <img src="./evidencias/manual-sucesso-2.png" width="45%">
+  <img src="./evidencias/execucao-manual-1.png" width="45%">
+  <img src="./evidencias/execucao-manual-2.png" width="45%">
 </p>
 
 ### 3. Execução Agendada
 
-<p align="center">
-  <img src="./evidencias/agendada-sucesso-1.png" width="45%">
-  <img src="./evidencias/agendada-sucesso-2.png" width="45%">
-</p>
+A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
+
+O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
+
+A configuração utilizada encontra-se disponível no arquivo:
+ci-exec.yaml
 
 ---
 # Publicação do Relatório
@@ -245,11 +255,12 @@ A utilização de Artifacts garante rastreabilidade, preservação dos resultado
 
 ### 3. Artifacts - Execução Agendada
 
-<p align="center">
-  <img src="./evidencias/artifacts-agendada-1.png" width="45%">
-  <img src="./evidencias/artifacts-agendada-2.png" width="45%">
-</p>
+A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
 
+O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
+
+A configuração utilizada encontra-se disponível no arquivo:
+ci-exec.yaml
 ---
 # Relatório HTML
 
@@ -289,17 +300,12 @@ A utilização de relatórios HTML facilita a análise dos resultados, proporcio
 
 ### 3. Relatório HTML - Execução Agendada
 
-<p align="center">
-  <img src="./evidencias/relatorio-html-agendada-1.png" width="900">
-</p>
+A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
 
-<p align="center">
-  <img src="./evidencias/relatorio-html-agendada-2.png" width="900">
-</p>
+O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
 
-<p align="center">
-  <img src="./evidencias/relatorio-html-agendada-3.png" width="900">
-</p>
+A configuração utilizada encontra-se disponível no arquivo:
+ci-exec.yaml
 
 ---
 
@@ -327,9 +333,12 @@ O arquivo gerado registra informações detalhadas da execução, incluindo esta
 
 ### 3. Relatório JSON - Execução Agendada
 
-<p align="center">
-  <img src="./evidencias/relatorio-json-agendada.png" width="900">
-</p>
+A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
+
+O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
+
+A configuração utilizada encontra-se disponível no arquivo:
+ci-exec.yaml
 
 ---
 
@@ -364,7 +373,7 @@ O código-fonte, as pipelines de Integração Contínua, os testes automatizados
 
 URL do Repositório:
 
-https://github.com/AlineRodrigues/projeto-pagamentos
+https://github.com/AlineRodrigues/projeto-pagamentos-pipeline-unica
 
 O repositório contém:
 
