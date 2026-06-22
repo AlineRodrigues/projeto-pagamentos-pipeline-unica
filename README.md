@@ -217,12 +217,10 @@ As imagens apresentadas a seguir documentam cada etapa do processo e servem como
 
 ### 3. Execução Agendada
 
-A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
-
-O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
-
-A configuração utilizada encontra-se disponível no arquivo:
-ci-exec.yaml
+<p align="center">
+  <img src="./evidencias/execucao-agendada-1.png" width="45%">
+  <img src="./evidencias/execucao-agendada-2.png" width="45%">
+</p>
 
 ---
 # Publicação do Relatório
@@ -255,12 +253,11 @@ A utilização de Artifacts garante rastreabilidade, preservação dos resultado
 
 ### 3. Artifacts - Execução Agendada
 
-A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
+<p align="center">
+  <img src="./evidencias/artifacts-agendada-1.png" width="45%">
+  <img src="./evidencias/artifacts-agendada-2.png" width="45%">
+</p>
 
-O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
-
-A configuração utilizada encontra-se disponível no arquivo:
-ci-exec.yaml
 ---
 # Relatório HTML
 
@@ -273,6 +270,7 @@ A utilização de relatórios HTML facilita a análise dos resultados, proporcio
 ## Evidências Dos Relatórios HTML
 
 ### 1. Relatório HTML - Execução por Push
+
 <p align="center">
   <img src="./evidencias/relatorio-html-push-1.png" width="900">
 </p>
@@ -286,6 +284,7 @@ A utilização de relatórios HTML facilita a análise dos resultados, proporcio
 </p>
 
 ### 2. Relatório HTML - Execução Manual
+
 <p align="center">
   <img src="./evidencias/relatorio-html-manual-1.png" width="900">
 </p>
@@ -300,12 +299,17 @@ A utilização de relatórios HTML facilita a análise dos resultados, proporcio
 
 ### 3. Relatório HTML - Execução Agendada
 
-A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
+<p align="center">
+  <img src="./evidencias/relatorio-html-agendada-1.png" width="900">
+</p>
 
-O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
+<p align="center">
+  <img src="./evidencias/relatorio-html-agendada-2.png" width="900">
+</p>
 
-A configuração utilizada encontra-se disponível no arquivo:
-ci-exec.yaml
+<p align="center">
+  <img src="./evidencias/relatorio-html-agendada-3.png" width="900">
+</p>
 
 ---
 
@@ -333,12 +337,9 @@ O arquivo gerado registra informações detalhadas da execução, incluindo esta
 
 ### 3. Relatório JSON - Execução Agendada
 
-A pipeline agendada foi configurada utilizando o gatilho `schedule` do GitHub Actions através de expressão Cron.
-
-O workflow foi criado, versionado e disponibilizado no repositório conforme solicitado. Em razão da fila de execução do GitHub Actions no momento da validação, não foi possível obter a evidência da execução automática dentro do período da atividade.
-
-A configuração utilizada encontra-se disponível no arquivo:
-ci-exec.yaml
+<p align="center">
+  <img src="./evidencias/relatorio-json-agendada.png" width="900">
+</p>
 
 ---
 
