@@ -1,4 +1,4 @@
-# Projeto Pagamentos - Integração Contínua com GitHub Actions
+# Projeto Pagamentos - Integração Contínua com GitHub Actions - Pipeline única
 
 ## Objetivo
 
