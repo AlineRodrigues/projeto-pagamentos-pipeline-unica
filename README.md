@@ -6,6 +6,8 @@ Este projeto tem como objetivo demonstrar a implementação de uma pipeline de I
 
 A solução foi desenvolvida para atender aos requisitos da atividade prática da disciplina de Integração Contínua para Automação de Testes, contemplando diferentes formas de execução da pipeline, geração de relatórios de testes e publicação dos resultados.
 
+Neste projeto foi implementada uma única pipeline de Integração Contínua utilizando GitHub Actions. A solução consolida em um único workflow os três gatilhos de execução exigidos pela atividade: execução por Push, execução Manual (Workflow Dispatch) e execução Agendada (Schedule).
+
 ---
 
 # Tecnologias Utilizadas
@@ -42,7 +44,7 @@ Neste projeto, a pipeline realiza:
 
 ## Pipeline as Code
 
-As pipelines foram implementadas através de arquivos YAML armazenados no próprio repositório, seguindo o conceito de Pipeline as Code.
+A pipeline foi implementada através de um arquivo YAML armazenado no próprio repositório, seguindo o conceito de Pipeline as Code.
 
 ---
 
@@ -110,7 +112,7 @@ O arquivo HTML apresenta uma visualização amigável dos resultados dos testes 
 
 ---
 
-# Pipelines Implementadas
+# # Formas de Execução da Pipeline
 
 ## 1. Execução por Push
 
@@ -181,7 +183,7 @@ Essa abordagem permite armazenar e consultar os resultados das execuções sem n
 
 # Evidências de Execução
 
-Esta seção apresenta as evidências coletadas durante a validação das pipelines de Integração Contínua desenvolvidas com GitHub Actions.
+Esta seção apresenta as evidências coletadas durante a validação da pipeline de Integração Contínua desenvolvida com GitHub Actions.
 
 Os registros demonstram o correto funcionamento dos diferentes gatilhos configurados (Push, Manual e Schedule), bem como a execução dos testes automatizados, a geração dos relatórios e a publicação dos artefatos produzidos pela pipeline.
 
@@ -229,7 +231,7 @@ Após a execução dos testes automatizados, os relatórios gerados pelo Mochawe
 
 Os Artifacts permitem armazenar os resultados da execução da pipeline, possibilitando o download e a análise posterior dos relatórios sem a necessidade de acessar diretamente o ambiente de execução.
 
-Durante a execução das pipelines implementadas neste projeto, os relatórios foram armazenados com sucesso, contendo os seguintes arquivos:
+Durante as execuções da pipeline implementada neste projeto, os relatórios foram armazenados com sucesso, contendo os seguintes arquivos:
 
 resultado.html
 resultado.json
